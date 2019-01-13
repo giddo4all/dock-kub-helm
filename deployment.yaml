@@ -2,10 +2,10 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: exampleservice
+  name: msaservice
 spec:
   selector:
-    app: myapp
+    app: testapp
   ports:
     - protocol: "TCP"
       # Port accessible inside cluster
@@ -22,17 +22,16 @@ spec:
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: myappdeployment
+  name: msadeployment
 spec:
   replicas: 5
   template:
     metadata:
       labels:
-        app: myapp
+        app: testapp
     spec:
       containers:
-        - name: myapp
-          #image: jamesquigley/exampleapp:v1.0.0
+        - name: testapp
           image: tutum/hello-world
           ports:
             - containerPort: 80
