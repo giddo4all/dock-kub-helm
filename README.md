@@ -1,2 +1,2 @@
 # dock-kub-helm
-Getting started started with Micro Service, Docker, Kubernetes and Helm Charts
+Getting started with MSA (Micro Service Architecture) using Docker, Kubernetes and Helm Charts.
