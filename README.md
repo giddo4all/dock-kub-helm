@@ -49,6 +49,8 @@ kubectl describe deployments msadeployment
 #### To access the app outside the ec2 Instance (pulic web access)
 `http://<ec2-instance-public-ip>:<nodeport>`
 
+![image](https://user-images.githubusercontent.com/7978704/51094488-1dca8400-1773-11e9-867d-f8743bbdcb43.png)
+
 
 #### To Clean up first delete the Service then delete the Deployment, the ReplicaSet, and the Pods that are running the app
 ```
