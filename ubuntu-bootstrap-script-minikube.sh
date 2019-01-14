@@ -1,6 +1,8 @@
 #!/bin/sh
 
 apt-get update
+apt-get install -y git
+apt-get  install -y awscli
 apt-get install -y \
     apt-transport-https \
     ca-certificates \
